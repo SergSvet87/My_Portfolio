@@ -354,6 +354,7 @@ body {
 }
 .textarea {
   min-height: 140px;
+  padding-top: 10px;
 }
 
 .form-container {

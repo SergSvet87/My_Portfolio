@@ -5,10 +5,10 @@ $email = $_POST['client_email']; // получаем почту клиента
 $message = $_POST['client_message']; // получаем сообщение клиента
 
 // воодим между кавычек токен бота, который прислал @botfater
-$token = "5556378662:AAEQv_fY5TW5yNOw2RkLPAKhodZFjXAPubA"; 
+$token = "1687513493:AAE6iT_BFPJeFJiboNxxlWuGxPjwG8zZIpI"; 
 // вставляем номер чата, который можно найти на странице 
-// api.telegram.org/botXXXXXXXXX/getUpdates — где XXX это токен бота
-$chat_id = "226758069";
+// api.telegram.org/bot1687513493:AAE6iT_BFPJeFJiboNxxlWuGxPjwG8zZIpI/getUpdates — где XXX это токен бота
+$chat_id = "-625586426";
 
 // Собираем данные в один массив 
 $arr = array(
@@ -26,8 +26,7 @@ foreach($arr as $key => $value) {
 $sendToTelegram = fopen("https://api.telegram.org/bot{$token}/sendMessage?chat_id={$chat_id}&parse_mode=html&text={$txt}","r");
 
 if ($sendToTelegram) { 
-  return true; // если прошло успешно, возвращаем ответ true
+  header('Location: thank-you.html'); // если прошло успешно, делаем переход на страницу с благодарностью
 } else {
   return false; // если ошибка, возвращаем false
 }
-?>
