@@ -23,7 +23,10 @@
   </head>
   <body>
     <div class="navbar container">
-      <img src="img/icons/logo.svg" alt="Logo" />
+      <a href="index.html" class="navbar__logo">
+        <img src="img/icons/logo.svg" alt="Logo" width="25" height="20" />
+      </a>
+      <!-- /.navbar__logo -->
       <nav class="navigation">
         <ul class="nav-list">
           <li class="nav-item">
@@ -50,7 +53,9 @@
       <img
         src="img/ok-full.jpeg"
         alt="Сергій Світличний - моя аватарка"
-        class="header-photo" width="212" height="237"
+        class="header-photo"
+        width="212"
+        height="237"
       />
       <div class="header-text">
         <strong class="header-strong">Привіт 👋</strong>
@@ -59,68 +64,105 @@
             >Я фронтенд-розробник та трішечки веб-дизайнер</span
           >
           <br />
-          Мене звуть Сергій Світличний <br />
+          Мене звуть <em class="header-heading__name">Сергій Світличний</em>
+          <br />
           і я роблю сайти для людей та компаній
         </h1>
         <div class="header-links">
           <ul class="social-list">
             <li class="social-item">
-              <a target="_blank" href="https://www.linkedin.com/public-profile/settings?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact-info%3BhcBiHBFlT5yVayJn2EHCdQ%3D%3D" class="social-link">
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/public-profile/settings?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact-info%3BhcBiHBFlT5yVayJn2EHCdQ%3D%3D"
+                class="social-link"
+              >
                 <img
                   src="img/icons/linkedin.svg"
                   alt="linkedin"
-                  class="social-logo" width="24" height="24"
-              />
-            </a>
+                  class="social-logo"
+                  width="24"
+                  height="24"
+                />
+              </a>
             </li>
             <li class="social-item">
-              <a href="mailto:svitlychnyi1905@gmail.com" target="_blank" class="social-link"
-                >
+              <a
+                href="mailto:svitlychnyi1905@gmail.com"
+                target="_blank"
+                class="social-link"
+              >
                 <img
                   src="img/icons/gmail.svg"
                   alt="gmail"
-                  class="social-logo" width="24" height="24"
-              />
-            </a>
+                  class="social-logo"
+                  width="24"
+                  height="24"
+                />
+              </a>
             </li>
             <li class="social-item">
-              <a href="https://github.com/SergSvet87" target="_blank" class="social-link"
+              <a
+                href="https://github.com/SergSvet87"
+                target="_blank"
+                class="social-link"
                 ><img
                   src="img/icons/github.svg"
                   alt="github"
-                  class="social-logo" width="24" height="24"
+                  class="social-logo"
+                  width="24"
+                  height="24"
               /></a>
             </li>
             <li class="social-item">
-              <a href="https://stackoverflow.com/users/20042762/serhii-svitlychnyi" target="_blank" class="social-link"
+              <a
+                href="https://stackoverflow.com/users/20042762/serhii-svitlychnyi"
+                target="_blank"
+                class="social-link"
                 ><img
                   src="img/icons/stackoverflow.svg"
                   alt="stackoverflow"
-                  class="social-logo" width="24" height="24"
+                  class="social-logo"
+                  width="24"
+                  height="24"
               /></a>
             </li>
             <li class="social-item">
-              <a href="https://t.me/Serg_svet" target="_blank" class="social-link"
+              <a
+                href="https://t.me/Serg_svet"
+                target="_blank"
+                class="social-link"
                 ><img
                   src="img/icons/telegram.svg"
                   alt="telegram"
-                  class="social-logo" width="24" height="24"
+                  class="social-logo"
+                  width="24"
+                  height="24"
               /></a>
             </li>
             <li class="social-item">
-              <a href="" target="_blank" class="social-link"
+              <a
+                href="https://www.facebook.com/s.svetlichnyy/"
+                target="_blank"
+                class="social-link"
                 ><img
                   src="img/icons/facebook.svg"
                   alt="facebook"
-                  class="social-logo" width="24" height="24"
+                  class="social-logo"
+                  width="24"
+                  height="24"
               /></a>
             </li>
             <li class="social-item">
-              <a href="Skype:https://join.skype.com/invite/CBnR8fF6vKfj" target="_blank" class="social-link"
+              <a
+                href="Skype:https://join.skype.com/invite/CBnR8fF6vKfj"
+                target="_blank"
+                class="social-link"
                 ><img
                   src="img/icons/Skype.svg"
                   alt="Skype"
-                  class="social-logo" width="24" height="24"
+                  class="social-logo"
+                  width="24"
+                  height="24"
               /></a>
             </li>
           </ul>
@@ -136,6 +178,9 @@
         </div>
       </div>
     </header>
+    <!-- ./header -->
+
+    <!-- Portfolio -->
     <section class="portfolio" id="portfolio">
       <div class="container">
         <h2 class="section-heading">Останні проєкти</h2>
@@ -468,9 +513,7 @@
                 href="https://sergsvet87.github.io/evarugs/"
                 class="project-link"
               >
-                <h5 class="project-link__title title-h5">
-                  Автоковрики Evarugs!
-                </h5>
+                <h5 class="project-link__title title-h5">Mats Evarugs!</h5>
               </a>
               <span class="project-link__dots">
                 ........................................
@@ -502,9 +545,7 @@
                 href="https://sergsvet87.github.io/Elevate_Your_Everyday/"
                 class="project-link"
               >
-                <h5 class="project-link__title title-h5">
-                  Elevate Your Everyday
-                </h5>
+                <h5 class="project-link__title title-h5">Elevate Everyday</h5>
               </a>
               <span class="project-link__dots">
                 ........................................
@@ -598,6 +639,9 @@
         <!-- ./проєкти -->
       </div>
     </section>
+    <!-- ./portfolio -->
+
+    <!-- Developer -->
     <section class="developer container" id="developer">
       <img src="img/OK.jpeg" alt="Сергій Світличний" class="developer-photo" />
       <div class="developer-about">
@@ -624,15 +668,22 @@
       <h2 class="skills-title">Працюю з різними мовами та інструментами</h2>
       <ul class="tags">
         <li class="tags-item"><a href="#" class="tag">HTML</a></li>
+        <li class="tags-item"><a href="#" class="tag">Figma</a></li>
+        <li class="tags-item"><a href="#" class="tag">Adobe XD</a></li>
         <li class="tags-item"><a href="#" class="tag">CSS</a></li>
         <li class="tags-item"><a href="#" class="tag">SASS</a></li>
         <li class="tags-item"><a href="#" class="tag">SCSS</a></li>
         <li class="tags-item"><a href="#" class="tag">JavaScript</a></li>
+        <li class="tags-item"><a href="#" class="tag">Swiper</a></li>
+        <li class="tags-item"><a href="#" class="tag">jQuery</a></li>
+        <li class="tags-item"><a href="#" class="tag">Icon Fonts</a></li>
         <li class="tags-item"><a href="#" class="tag">Git</a></li>
         <li class="tags-item"><a href="#" class="tag">Gulp</a></li>
+        <li class="tags-item"><a href="#" class="tag">Open Server</a></li>
         <li class="tags-item"><a href="#" class="tag">PHP</a></li>
         <li class="tags-item"><a href="#" class="tag">UI/UX Design</a></li>
         <li class="tags-item"><a href="#" class="tag">Wordpress</a></li>
+        <li class="tags-item"><a href="#" class="tag">PhpMyAdmin</a></li>
       </ul>
     </section>
     <section class="feedback" id="feedback">
