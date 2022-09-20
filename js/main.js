@@ -32,3 +32,16 @@ forms.forEach((form) => {
       .catch((err) => console.error(err)); /* если ошибка, выводим в консоль */
   });
 });
+
+const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  // direction: 'vertical',
+  slidesPerView: 1,
+  loop: true,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});

@@ -15,24 +15,43 @@
     <meta name="author" content="Світличний Сергій" />
     <title>Serhii Svitlychnyi</title>
     <link rel="stylesheet" href="css/normalize.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <div class="navbar container">
-      <img src="img/icons/logo.svg" alt="Logo">
+      <img src="img/icons/logo.svg" alt="Logo" />
       <nav class="navigation">
         <ul class="nav-list">
-          <li class="nav-item"><a href="#main" class="nav-link active">Головна</a></li>
-          <li class="nav-item"><a href="#portfolio" class="nav-link">Проєкти</a></li>
-          <li class="nav-item"><a href="#developer" class="nav-link">Про мене</a></li>
-          <li class="nav-item"><a href="#feedback" class="nav-link">Зв'язатися зі мною</a></li>
+          <li class="nav-item">
+            <a href="#main" class="nav-link active">Головна</a>
+          </li>
+          <li class="nav-item">
+            <a href="#portfolio" class="nav-link">Останні Проєкти</a>
+          </li>
+          <li class="nav-item">
+            <a href="#projects" class="nav-link">Мої Проєкти</a>
+          </li>
+          <li class="nav-item">
+            <a href="#developer" class="nav-link">Про мене</a>
+          </li>
+          <li class="nav-item">
+            <a href="#feedback" class="nav-link">Зв'язатися зі мною</a>
+          </li>
         </ul>
       </nav>
     </div>
     <!-- ./нав бара -->
 
     <header class="header container" id="main">
-      <img src="img/ok-full.jpeg" alt="Сергій Світличний" class="header-photo" />
+      <img
+        src="img/ok-full.jpeg"
+        alt="Сергій Світличний - моя аватарка"
+        class="header-photo" width="212" height="237"
+      />
       <div class="header-text">
         <strong class="header-strong">Привіт 👋</strong>
         <h1 class="header-heading">
@@ -40,59 +59,78 @@
             >Я фронтенд-розробник та трішечки веб-дизайнер</span
           >
           <br />
-          Мене звуть Сергій Світличний і я роблю <br />
-          сайти для людей та компаній
+          Мене звуть Сергій Світличний <br />
+          і я роблю сайти для людей та компаній
         </h1>
         <div class="header-links">
           <ul class="social-list">
             <li class="social-item">
-              <a href="" class="social-link">
+              <a target="_blank" href="https://www.linkedin.com/public-profile/settings?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact-info%3BhcBiHBFlT5yVayJn2EHCdQ%3D%3D" class="social-link">
                 <img
                   src="img/icons/linkedin.svg"
                   alt="linkedin"
-                  class="social-logo"
-              /></a>
+                  class="social-logo" width="24" height="24"
+              />
+            </a>
             </li>
             <li class="social-item">
-              <a href="" class="social-link"
-                ><img
-                  src="img/icons/twitter.svg"
-                  alt="twitter"
-                  class="social-logo"
-              /></a>
+              <a href="mailto:svitlychnyi1905@gmail.com" target="_blank" class="social-link"
+                >
+                <img
+                  src="img/icons/gmail.svg"
+                  alt="gmail"
+                  class="social-logo" width="24" height="24"
+              />
+            </a>
             </li>
             <li class="social-item">
-              <a href="" class="social-link"
+              <a href="https://github.com/SergSvet87" target="_blank" class="social-link"
                 ><img
                   src="img/icons/github.svg"
                   alt="github"
-                  class="social-logo"
+                  class="social-logo" width="24" height="24"
               /></a>
             </li>
             <li class="social-item">
-              <a href="" class="social-link"
+              <a href="https://stackoverflow.com/users/20042762/serhii-svitlychnyi" target="_blank" class="social-link"
                 ><img
                   src="img/icons/stackoverflow.svg"
                   alt="stackoverflow"
-                  class="social-logo"
+                  class="social-logo" width="24" height="24"
               /></a>
             </li>
             <li class="social-item">
-              <a href="" class="social-link"
+              <a href="https://t.me/Serg_svet" target="_blank" class="social-link"
                 ><img
-                  src="img/icons/youtube.svg"
-                  alt="youtube"
-                  class="social-logo"
+                  src="img/icons/telegram.svg"
+                  alt="telegram"
+                  class="social-logo" width="24" height="24"
+              /></a>
+            </li>
+            <li class="social-item">
+              <a href="" target="_blank" class="social-link"
+                ><img
+                  src="img/icons/facebook.svg"
+                  alt="facebook"
+                  class="social-logo" width="24" height="24"
+              /></a>
+            </li>
+            <li class="social-item">
+              <a href="Skype:https://join.skype.com/invite/CBnR8fF6vKfj" target="_blank" class="social-link"
+                ><img
+                  src="img/icons/Skype.svg"
+                  alt="Skype"
+                  class="social-logo" width="24" height="24"
               /></a>
             </li>
           </ul>
-          <a href="Svitlychnyi_Serhii_Yuriyovych_CV.pdf" class="cv-download" download>
+          <a
+            href="Svitlychnyi_Serhii_Yuriyovych_CV.pdf"
+            class="cv-download"
+            download
+          >
             <!---нужно вложить в файлы файл с названием cv.pdf-->
-            <img
-              src="img/icons/CV.svg"
-              alt="download-icon"
-              class="cv-icon"
-            />
+            <img src="img/icons/CV.svg" alt="download-icon" class="cv-icon" />
             <span class="cv-text">Скачати резюме</span>
           </a>
         </div>
@@ -102,17 +140,277 @@
       <div class="container">
         <h2 class="section-heading">Останні проєкти</h2>
 
+        <!-- Slider main container -->
+        <div class="swiper portfolio__swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper portfolio__swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide portfolio__swiper-slide slide-swiper">
+              <img
+                class="slide-swiper__img"
+                src="img/Minimo.png"
+                alt="Minimo"
+                width="870"
+                height="750"
+              />
+              <div class="slide-swiper__card-text-wrapper">
+                <h3 class="slide-swiper__card-title">
+                  Веб - сайт та декілька сторінок до нього
+                </h3>
+                <ul class="tags">
+                  <li class="tags-item"><a href="#" class="tag">HTML</a></li>
+                  <li class="tags-item"><a href="#" class="tag">CSS</a></li>
+                  <li class="tags-item"><a href="#" class="tag">SASS</a></li>
+                  <li class="tags-item">
+                    <a href="#" class="tag">JavaScript</a>
+                  </li>
+                  <li class="tags-item">
+                    <a href="#" class="tag">Swiper</a>
+                  </li>
+                  <li class="tags-item">
+                    <a href="#" class="tag">Google Icon Font</a>
+                  </li>
+                  <li class="tags-item">
+                    <a href="#" class="tag">Adobe XD</a>
+                  </li>
+                  <li class="tags-item"><a href="#" class="tag">Git</a></li>
+                </ul>
+                <p class="slide-swiper__card-text">
+                  Гарний сайт-фотощоденник, який зможе зафіксувати враження та
+                  події ідеального відпочинку на вихідних.
+                </p>
+                <div class="slide-swiper__card-buttons buttons-swiper-slide">
+                  <a
+                    href="https://github.com/SergSvet87/Minimo.git"
+                    class="buttons-swiper-slide__button"
+                    target="_blank"
+                  >
+                    <img
+                      src="img/icons/Code.svg"
+                      alt="download icon"
+                      class="buttons-swiper-slide__button-icon"
+                    />
+                    <span class="buttons-swiper-slide__button-text">Код</span>
+                  </a>
+                  <a
+                    href="https://sergsvet87.github.io/Minimo/"
+                    class="buttons-swiper-slide__button"
+                    target="_blank"
+                  >
+                    <img
+                      src="img/icons/Check.svg"
+                      alt="chek icon"
+                      class="buttons-swiper-slide__button-icon"
+                    />
+                    <span class="buttons-swiper-slide__button-text">Демо</span>
+                  </a>
+                </div>
+              </div>
+              <!-- /.slide-swiper__text -->
+            </div>
+
+            <div class="swiper-slide portfolio__swiper-slide slide-swiper">
+              <img
+                class="slide-swiper__img"
+                src="img/SmartSpace.jpg"
+                alt="Smart Space"
+                width="870"
+                height="750"
+              />
+              <div class="slide-swiper__card-text-wrapper">
+                <h3 class="slide-swiper__card-title">Веб - сайт</h3>
+                <ul class="tags">
+                  <li class="tags-item"><a href="#" class="tag">HTML</a></li>
+                  <li class="tags-item"><a href="#" class="tag">CSS</a></li>
+                  <li class="tags-item"><a href="#" class="tag">SASS</a></li>
+                  <li class="tags-item"><a href="#" class="tag">Gulp</a></li>
+                  <li class="tags-item">
+                    <a href="#" class="tag">JavaScript</a>
+                  </li>
+                  <li class="tags-item">
+                    <a href="#" class="tag">Swiper</a>
+                  </li>
+                  <li class="tags-item"><a href="#" class="tag">Figma</a></li>
+                  <li class="tags-item"><a href="#" class="tag">Git</a></li>
+                </ul>
+                <p class="slide-swiper__card-text">
+                  Landing-page для людей, які обирають розумний стиль життя
+                  разом з прекрасними будівлями нашої компанії.
+                </p>
+                <div class="slide-swiper__card-buttons buttons-swiper-slide">
+                  <a
+                    href="https://github.com/SergSvet87/Smart_Space.git"
+                    class="buttons-swiper-slide__button"
+                    target="_blank"
+                  >
+                    <img
+                      src="img/icons/Code.svg"
+                      alt="download icon"
+                      class="buttons-swiper-slide__button-icon"
+                    />
+                    <span class="buttons-swiper-slide__button-text">Код</span>
+                  </a>
+                  <a
+                    href="https://sergsvet87.github.io/Smart_Space/"
+                    class="buttons-swiper-slide__button"
+                    target="_blank"
+                  >
+                    <img
+                      src="img/icons/Check.svg"
+                      alt="chek icon"
+                      class="buttons-swiper-slide__button-icon"
+                    />
+                    <span class="buttons-swiper-slide__button-text">Демо</span>
+                  </a>
+                </div>
+              </div>
+              <!-- /.slide-swiper__text -->
+            </div>
+
+            <div class="swiper-slide portfolio__swiper-slide slide-swiper">
+              <img
+                class="slide-swiper__img"
+                src="img/MajorProject.jpg"
+                alt="Major Project"
+                width="870"
+                height="750"
+              />
+              <div class="slide-swiper__card-text-wrapper">
+                <h3 class="slide-swiper__card-title">Веб - сайт</h3>
+                <ul class="tags">
+                  <li class="tags-item"><a href="#" class="tag">HTML</a></li>
+                  <li class="tags-item"><a href="#" class="tag">CSS</a></li>
+                  <li class="tags-item">
+                    <a href="#" class="tag">JavaScript</a>
+                  </li>
+                  <li class="tags-item">
+                    <a href="#" class="tag">Materialize</a>
+                  </li>
+                  <li class="tags-item"><a href="#" class="tag">Figma</a></li>
+                  <li class="tags-item"><a href="#" class="tag">Git</a></li>
+                </ul>
+                <p class="slide-swiper__card-text">
+                  Landing-page з проєктами для розвитку будівництва в нашій
+                  прекрасній державі - Україна.
+                </p>
+                <div class="slide-swiper__card-buttons buttons-swiper-slide">
+                  <a
+                    href="https://github.com/SergSvet87/Major_Projects.git"
+                    class="buttons-swiper-slide__button"
+                    target="_blank"
+                  >
+                    <img
+                      src="img/icons/Code.svg"
+                      alt="download icon"
+                      class="buttons-swiper-slide__button-icon"
+                    />
+                    <span class="buttons-swiper-slide__button-text">Код</span>
+                  </a>
+                  <a
+                    href="https://sergsvet87.github.io/Major_Projects/"
+                    class="buttons-swiper-slide__button"
+                    target="_blank"
+                  >
+                    <img
+                      src="img/icons/Check.svg"
+                      alt="chek icon"
+                      class="buttons-swiper-slide__button-icon"
+                    />
+                    <span class="buttons-swiper-slide__button-text">Демо</span>
+                  </a>
+                </div>
+              </div>
+              <!-- /.slide-swiper__text -->
+            </div>
+          </div>
+          <!-- ./карточки -->
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev portfolio__swiper-btn_prev"></div>
+          <div class="swiper-button-next portfolio__swiper-btn_next"></div>
+        </div>
+
+        <h2 class="section-heading" id="projects">Мої проєкти</h2>
         <ol class="project-list">
+          <li class="projects-item">
+            <span class="project">
+              <a
+                href="https://sergsvet87.github.io/Build_it_with_Passion/"
+                class="project-link"
+                ><h5 class="project-link__title title-h5">
+                  Build it with Passion
+                </h5>
+                <!-- /.project-link__title title-h5 --></a
+              >
+              <span class="project-link__dots">
+                ........................................
+              </span>
+              <!-- /.project-link__dots -->
+              <span class="project-bracket">[</span>
+              HTML5, CSS3, Marsy, Fontello, JQuery
+              <span class="project-bracket">]</span>
+            </span>
+          </li>
           <li class="projects-item">
             <span class="project">
               <a
                 href="https://sergsvet87.github.io/Lessons_PlayofGuitar/"
                 class="project-link"
-                >Lessons Play of Guitar</a
               >
-              .....................................................
+                <h5 class="project-link__title title-h5">Guitar Lessons</h5>
+              </a>
+              <span class="project-link__dots">
+                ........................................
+              </span>
               <span class="project-bracket">[</span>
-              HTML5, CSS3
+              HTML5, CSS3, Figma, UI/UX
+              <span class="project-bracket">]</span>
+            </span>
+          </li>
+          <li class="projects-item">
+            <span class="project">
+              <a
+                href="https://sergsvet87.github.io/Daru_Website/"
+                class="project-link"
+                ><h5 class="project-link__title title-h5">Daru Website</h5>
+              </a>
+              <span class="project-link__dots">
+                ........................................
+              </span>
+              <span class="project-bracket">[</span>
+              HTML5, CSS3, Figma
+              <span class="project-bracket">]</span>
+            </span>
+          </li>
+          <li class="projects-item">
+            <span class="project">
+              <a
+                href="https://sergsvet87.github.io/Master-messages/"
+                class="project-link"
+              >
+                <h5 class="project-link__title title-h5">Master Messages</h5>
+              </a>
+              <span class="project-link__dots">
+                ........................................
+              </span>
+              <span class="project-bracket">[</span>
+              HTML5, CSS3, Adobe XD
+              <span class="project-bracket">]</span>
+            </span>
+          </li>
+          <li class="projects-item">
+            <span class="project">
+              <a
+                href="https://sergsvet87.github.io/Bakery/"
+                class="project-link"
+              >
+                <h5 class="project-link__title title-h5">Bakery</h5>
+              </a>
+              <span class="project-link__dots">
+                ........................................
+              </span>
+              <span class="project-bracket">[</span>
+              HTML5, CSS3, Figma
               <span class="project-bracket">]</span>
             </span>
           </li>
@@ -121,11 +419,14 @@
               <a
                 href="https://sergsvet87.github.io/Hand_Brake/"
                 class="project-link"
-                >Hand Brake</a
               >
-              .....................................................
+                <h5 class="project-link__title title-h5">Hand Brake</h5>
+              </a>
+              <span class="project-link__dots">
+                ........................................
+              </span>
               <span class="project-bracket">[</span>
-              HTML5, CSS3
+              HTML5, CSS3, Figma
               <span class="project-bracket">]</span>
             </span>
           </li>
@@ -134,9 +435,12 @@
               <a
                 href="https://sergsvet87.github.io/IPhone_13_pro/"
                 class="project-link"
-                >IPhone 13 PRO</a
               >
-              ..............................................
+                <h5 class="project-link__title title-h5">IPhone 13 PRO</h5>
+              </a>
+              <span class="project-link__dots">
+                ........................................
+              </span>
               <span class="project-bracket">[</span>
               HTML5, CSS3, JavaScript
               <span class="project-bracket">]</span>
@@ -147,11 +451,14 @@
               <a
                 href="https://sergsvet87.github.io/youtube-concept/"
                 class="project-link"
-                >Main Page Youtube</a
               >
-              ..................................
+                <h5 class="project-link__title title-h5">Main Page Youtube</h5>
+              </a>
+              <span class="project-link__dots">
+                ........................................
+              </span>
               <span class="project-bracket">[</span>
-              HTML5, CSS3, JavaScript
+              HTML5, CSS3, Figma, JavaScript
               <span class="project-bracket">]</span>
             </span>
           </li>
@@ -160,11 +467,16 @@
               <a
                 href="https://sergsvet87.github.io/evarugs/"
                 class="project-link"
-                >Сайт автоковриков Evarugs!</a
               >
-              ............
+                <h5 class="project-link__title title-h5">
+                  Автоковрики Evarugs!
+                </h5>
+              </a>
+              <span class="project-link__dots">
+                ........................................
+              </span>
               <span class="project-bracket">[</span>
-              HTML5, CSS3, JavaScript
+              HTML5, CSS3, Figma, JavaScript
               <span class="project-bracket">]</span>
             </span>
           </li>
@@ -173,9 +485,12 @@
               <a
                 href="https://sergsvet87.github.io/o-zoneShop/"
                 class="project-link"
-                >"O-ZONE Shop"</a
               >
-              ............................................
+                <h5 class="project-link__title title-h5">O-ZONE Shop</h5>
+              </a>
+              <span class="project-link__dots">
+                ........................................
+              </span>
               <span class="project-bracket">[</span>
               HTML5, CSS3, JavaScript
               <span class="project-bracket">]</span>
@@ -186,11 +501,16 @@
               <a
                 href="https://sergsvet87.github.io/Elevate_Your_Everyday/"
                 class="project-link"
-                >Elevate Your Everyday</a
               >
-              .............................
+                <h5 class="project-link__title title-h5">
+                  Elevate Your Everyday
+                </h5>
+              </a>
+              <span class="project-link__dots">
+                ........................................
+              </span>
               <span class="project-bracket">[</span>
-              HTML5, CSS3
+              HTML5, CSS3, Figma
               <span class="project-bracket">]</span>
             </span>
           </li>
@@ -199,11 +519,14 @@
               <a
                 href="https://sergsvet87.github.io/Eats-Restaurant/"
                 class="project-link"
-                >Eats Restaurant</a
               >
-              ...........................................
+                <h5 class="project-link__title title-h5">Eats Restaurant</h5>
+              </a>
+              <span class="project-link__dots">
+                ........................................
+              </span>
               <span class="project-bracket">[</span>
-              HTML5, CSS3
+              HTML5, CSS3, Figma
               <span class="project-bracket">]</span>
             </span>
           </li>
@@ -212,37 +535,14 @@
               <a
                 href="https://sergsvet87.github.io/Insurance_Service/"
                 class="project-link"
-                >Insurance Service</a
               >
-              .......................................
+                <h5 class="project-link__title title-h5">Insurance Service</h5>
+              </a>
+              <span class="project-link__dots">
+                ........................................
+              </span>
               <span class="project-bracket">[</span>
-              HTML5, CSS3
-              <span class="project-bracket">]</span>
-            </span>
-          </li>
-          <li class="projects-item">
-            <span class="project">
-              <a
-                href="https://sergsvet87.github.io/My_computer/"
-                class="project-link"
-                >Computer Assembly</a
-              >
-              ................................
-              <span class="project-bracket">[</span>
-              HTML5, CSS3
-              <span class="project-bracket">]</span>
-            </span>
-          </li>
-          <li class="projects-item">
-            <span class="project">
-              <a
-                href="https://sergsvet87.github.io/Daru_Website/"
-                class="project-link"
-                >Daru Website</a
-              >
-              ................................................
-              <span class="project-bracket">[</span>
-              HTML5, CSS3
+              HTML5, CSS3, Figma
               <span class="project-bracket">]</span>
             </span>
           </li>
@@ -251,9 +551,12 @@
               <a
                 href="https://sergsvet87.github.io/Night_Shift/"
                 class="project-link"
-                >Night Shift</a
               >
-              .......................................................
+                <h5 class="project-link__title title-h5">Night Shift</h5>
+              </a>
+              <span class="project-link__dots">
+                ........................................
+              </span>
               <span class="project-bracket">[</span>
               HTML5, CSS3
               <span class="project-bracket">]</span>
@@ -264,11 +567,14 @@
               <a
                 href="https://sergsvet87.github.io/Flower_Plants/"
                 class="project-link"
-                >Flower Plants</a
               >
-              ................................................
+                <h5 class="project-link__title title-h5">Flower Plants</h5>
+              </a>
+              <span class="project-link__dots">
+                ........................................
+              </span>
               <span class="project-bracket">[</span>
-              HTML5, CSS3
+              HTML5, CSS3, Figma
               <span class="project-bracket">]</span>
             </span>
           </li>
@@ -277,9 +583,12 @@
               <a
                 href="https://sergsvet87.github.io/Aim_Game/"
                 class="project-link"
-                >Aim Game</a
               >
-              .......................................................
+                <h5 class="project-link__title title-h5">Aim Game</h5>
+              </a>
+              <span class="project-link__dots">
+                ........................................
+              </span>
               <span class="project-bracket">[</span>
               HTML5, CSS3, JavaScript
               <span class="project-bracket">]</span>
@@ -287,83 +596,6 @@
           </li>
         </ol>
         <!-- ./проєкти -->
-
-        <!-- <div class="cards">
-          <div class="card">
-            <img
-              src="images/card image 1.jpg"
-              alt="Буде в перспективі"
-              class="card-image"
-            />
-            <div class="card-text-wrapper">
-              <h3 class="card-title">Буде Веб - сайт</h3>
-              <ul class="tags">
-                <li class="tags-item"><a href="#" class="tag">HTML</a></li>
-                <li class="tags-item"><a href="#" class="tag">CSS</a></li>
-                <li class="tags-item">
-                  <a href="#" class="tag">JavaScript</a>
-                </li>
-                <li class="tags-item"><a href="#" class="tag">Git</a></li>
-                <li class="tags-item"><a href="#" class="tag">Vitejs</a></li>
-              </ul>
-              <p class="card-text">
-                Поки що нічого не має, але дуже скоро з'явиться =)
-              </p>
-              <div class="card-buttons">
-                <a href="" class="card-button">
-                  <img
-                    src="img/icons/Code.svg"
-                    alt="download icon"
-                    class="card-button-icon"
-                  />
-                  <span class="card-button-text">Код </span>
-                </a>
-                <a href="" class="card-button">
-                  <img
-                    src="img/icons/Check.svg"
-                    alt="chek icon"
-                    class="card-button-icon"
-                  />
-                  <span class="card-button-text">Демо </span>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <img
-              src="images/card image 2.jpg"
-              alt="Буде в перспективі"
-              class="card-image"
-            />
-            <div class="card-text-wrapper">
-              <h3 class="card-title">Буде інтернет-магазин</h3>
-              <ul class="tags">
-                <li class="tags-item"><a href="#" class="tag">HTML</a></li>
-                <li class="tags-item"><a href="#" class="tag">CSS</a></li>
-              </ul>
-              <p class="card-text">Поки що пусто, але це тимчасово.</p>
-              <div class="card-buttons">
-                <a href="" class="card-button">
-                  <img
-                    src="img/icons/Code.svg"
-                    alt="download icon"
-                    class="card-button-icon"
-                  />
-                  <span class="card-button-text">Код </span>
-                </a>
-                <a href="" class="card-button">
-                  <img
-                    src="img/icons/Check.svg"
-                    alt="chek icon"
-                    class="card-button-icon"
-                  />
-                  <span class="card-button-text">Демо </span>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div> -->
-        <!-- ./карточки -->
       </div>
     </section>
     <section class="developer container" id="developer">
@@ -377,7 +609,9 @@
         </p>
         <span class="motto">Код, Дизайн</span>
         <p class="developer-text">
-          Можу зібрати сторінку для вашої компанії, навіть якщо потрібно запустити її вже завтра. Із інструментів є: Figma, HTML, CSS, JavaScript, GIT та Wordpress
+          Можу зібрати сторінку для вашої компанії, навіть якщо потрібно
+          запустити її вже завтра. Із інструментів є: Figma, HTML, CSS,
+          JavaScript, GIT та Wordpress
         </p>
         <img
           src="img/my-sign.png"
@@ -431,11 +665,7 @@
           </div>
           <div class="button-group">
             <button type="submit" class="submit-button">
-              <img
-                src="img/icons/Send.svg"
-                alt="send-icon"
-                class="cv-icon"
-              />
+              <img src="img/icons/Send.svg" alt="send-icon" class="cv-icon" />
               <span class="cv-text">Відправити</span>
             </button>
           </div>
@@ -443,6 +673,7 @@
       </div>
     </section>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
