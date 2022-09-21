@@ -156,6 +156,13 @@ body {
 .portfolio__swiper .swiper-button-prev {
   color: #bf7506;
 }
+.portfolio__swiper .swiper-button-next{
+  right: 80px;
+}
+
+.portfolio__swiper .swiper-button-prev{
+  left: 60px;
+}
 
 .project-list {
   padding: 0;
