@@ -450,7 +450,7 @@ body {
   }
   .mobile-catalog {
     display: block;
-    padding-top: 20px;
+    padding-top: 40px;
   }
   .catalog__menu {
     display: flex;
@@ -626,6 +626,9 @@ body {
   .form-container::after {
     display: none;
   }
+  .header-text{
+    margin-left: 0;
+  }
 }
 
 @media (max-width: 600px) {
@@ -715,5 +718,8 @@ body {
     width: 100%;
     padding-left: 10px;
     font-size: 24px;
+  }
+  .social-list{
+    width: 220px;
   }
 }
