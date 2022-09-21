@@ -45,3 +45,24 @@ const swiper = new Swiper('.swiper', {
     prevEl: '.swiper-button-prev',
   },
 });
+
+const menu = () => {
+  const menuBurger = document.querySelector('.mobile-menu-catalog');
+  const body = document.querySelector('body');
+
+  menuBurger.addEventListener('click', (e) => {
+    toggleMenu();
+  });
+
+  function toggleMenu() {
+    menuBurger.classList.toggle('mobile-menu-catalog_active');
+
+    if (menuBurger.classList.contains('mobile-menu-catalog_active')) {
+      body.style.overflow = 'hidden';
+    } else {
+      body.style.overflow = 'visible';
+    }
+  }
+}
+
+menu();

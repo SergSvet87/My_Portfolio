@@ -19,6 +19,11 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     />
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -48,6 +53,65 @@
       </nav>
     </div>
     <!-- ./нав бара -->
+
+    <!-- Catalog -->
+    <div class="mobile-catalog">
+      <div class="container">
+        
+        <nav class="catalog__menu mobile-menu-catalog">
+          
+          <div class="mobile-menu-catalog__inner">
+            <a href="index.html" class="navbar__logo">
+              <img src="img/icons/logo.svg" alt="Logo" width="25" height="20" />
+            </a>
+            <!-- /.navbar__logo -->
+            <a class="mobile-menu-catalog__burger"
+              ><span class="mobile-menu-catalog__line"></span
+            ></a>
+          </div>
+
+          <ul class="mobile-menu-catalog__list">
+            <li class="nav-item mobile-menu-catalog__item">
+              <a href="#main" class="mobile-menu-catalog__limk nav-link">
+                <i class="material-icons">hail</i>Головна
+              </a>
+            </li>
+            <li class="nav-item mobile-menu-catalog__item">
+              <a href="#portfolio" class="mobile-menu-catalog__limk nav-link">
+                <i class="material-icons">hail</i>Останні Проєкти
+              </a>
+            </li>
+            <li class="nav-item mobile-menu-catalog__item">
+              <a href="#projects" class="mobile-menu-catalog__limk nav-link">
+                <i class="material-icons">hail</i>Мої Проєкти
+              </a>
+            </li>
+            <li class="nav-item mobile-menu-catalog__item">
+              <a href="#developer" class="mobile-menu-catalog__limk nav-link">
+                <i class="material-icons">hail</i>Про мене
+              </a>
+            </li>
+            <li class="nav-item mobile-menu-catalog__item">
+              <a href="#feedback" class="mobile-menu-catalog__limk nav-link">
+                <i class="material-icons">hail</i>Зв'язатися зі мною
+              </a>
+            </li>
+            <li class="mobile-menu-catalog__item"><div class="divider"></div></li>
+            <li class="mobile-menu-catalog__item">
+              <a class="mobile-menu-catalog__limk nav-link" href="#"
+                ><i class="material-icons">cancel</i>Cancel</a
+              >
+            </li>
+          </ul>
+          <!-- /.catalog__list -->
+
+          <div class="mobile-menu-catalog__overlay"></div>
+          <!-- /.mobile-menu__overlay -->
+        </nav>
+        <!-- /.catalog__menu mobile-menu-catalog -->
+      </div>
+    </div>
+    <!-- ./catalog -->
 
     <header class="header container" id="main">
       <img
@@ -80,8 +144,8 @@
                   src="img/icons/linkedin.svg"
                   alt="linkedin"
                   class="social-logo"
-                  width="24"
-                  height="24"
+                  width="30"
+                  height="30"
                 />
               </a>
             </li>
@@ -95,8 +159,8 @@
                   src="img/icons/gmail.svg"
                   alt="gmail"
                   class="social-logo"
-                  width="24"
-                  height="24"
+                  width="30"
+                  height="30"
                 />
               </a>
             </li>
@@ -109,8 +173,8 @@
                   src="img/icons/github.svg"
                   alt="github"
                   class="social-logo"
-                  width="24"
-                  height="24"
+                  width="30"
+                  height="30"
               /></a>
             </li>
             <li class="social-item">
@@ -122,8 +186,8 @@
                   src="img/icons/stackoverflow.svg"
                   alt="stackoverflow"
                   class="social-logo"
-                  width="24"
-                  height="24"
+                  width="30"
+                  height="30"
               /></a>
             </li>
             <li class="social-item">
@@ -135,8 +199,8 @@
                   src="img/icons/telegram.svg"
                   alt="telegram"
                   class="social-logo"
-                  width="24"
-                  height="24"
+                  width="30"
+                  height="30"
               /></a>
             </li>
             <li class="social-item">
@@ -148,8 +212,8 @@
                   src="img/icons/facebook.svg"
                   alt="facebook"
                   class="social-logo"
-                  width="24"
-                  height="24"
+                  width="30"
+                  height="30"
               /></a>
             </li>
             <li class="social-item">
@@ -161,8 +225,8 @@
                   src="img/icons/Skype.svg"
                   alt="Skype"
                   class="social-logo"
-                  width="24"
-                  height="24"
+                  width="30"
+                  height="30"
               /></a>
             </li>
           </ul>
@@ -643,7 +707,7 @@
 
     <!-- Developer -->
     <section class="developer container" id="developer">
-      <img src="img/OK.jpeg" alt="Сергій Світличний" class="developer-photo" />
+      <img src="img/OK.jpeg" alt="Сергій Світличний" class="developer-photo" width="360" height="440" />
       <div class="developer-about">
         <span class="developer-hello">Всім привіт</span>
         <h2 class="developer-title">Я, Сергій Світличний</h2>
@@ -664,6 +728,9 @@
         />
       </div>
     </section>
+    <!-- ./developer -->
+
+    <!-- skills -->
     <section class="skills container" id="skills">
       <h2 class="skills-title">Працюю з різними мовами та інструментами</h2>
       <ul class="tags">
@@ -686,8 +753,10 @@
         <li class="tags-item"><a href="#" class="tag">PhpMyAdmin</a></li>
       </ul>
     </section>
+    <!-- ./skills -->
+
+    <!-- feedback -->
     <section class="feedback" id="feedback">
-      <img src="images/hand.png" alt="" class="feedback-hand" />
       <div class="form-container">
         <h2 class="feedback-title">Готовий обговорити проєкт</h2>
         <form action="#" class="form">
@@ -723,6 +792,7 @@
         </form>
       </div>
     </section>
+    <!-- ./feedback -->
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
