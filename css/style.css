@@ -667,12 +667,15 @@ body {
     display: none;
   }
   .portfolio__swiper-btn_prev.swiper-button-prev,
-  .portfolio__swiper-btn_prev.swiper-button-next {
+  .portfolio__swiper-btn_next.swiper-button-next {
     position: absolute;
-    top: 47%;
-    height: 30px;
+    top: 48%;
+    height: 20px;
     width: 15px;
+    display: flex;
+    align-items: center;
     background: url("../img/icons/arrow.svg") no-repeat;
+    outline: none;
     z-index: 15;
   }
   .portfolio__swiper-btn_next.swiper-button-next {
