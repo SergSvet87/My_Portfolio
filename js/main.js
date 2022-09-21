@@ -39,6 +39,7 @@ const swiper = new Swiper('.swiper', {
   slidesPerView: 1,
   loop: true,
   speed: 400,
+  spaceBetween: 20,
 
   // Navigation arrows
   navigation: {
