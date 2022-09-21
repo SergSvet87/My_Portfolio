@@ -713,5 +713,7 @@ body {
   }
   .mobile-menu-catalog__list {
     width: 100%;
+    padding-left: 10px;
+    font-size: 24px;
   }
 }
