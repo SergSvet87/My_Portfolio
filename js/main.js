@@ -38,11 +38,12 @@ const swiper = new Swiper('.swiper', {
   // direction: 'vertical',
   slidesPerView: 1,
   loop: true,
+  speed: 400,
 
   // Navigation arrows
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.swiper-button-next.portfolio__swiper-btn_next',
+    prevEl: '.swiper-button-prev.portfolio__swiper-btn_prev',
   },
 });
 

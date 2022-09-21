@@ -57,9 +57,7 @@
     <!-- Catalog -->
     <div class="mobile-catalog">
       <div class="container">
-        
         <nav class="catalog__menu mobile-menu-catalog">
-          
           <div class="mobile-menu-catalog__inner">
             <a href="index.html" class="navbar__logo">
               <img src="img/icons/logo.svg" alt="Logo" width="25" height="20" />
@@ -72,33 +70,35 @@
 
           <ul class="mobile-menu-catalog__list">
             <li class="nav-item mobile-menu-catalog__item">
-              <a href="#main" class="mobile-menu-catalog__limk nav-link">
-                <i class="material-icons">hail</i>Головна
+              <a href="#main" class="mobile-menu-catalog__link nav-link">
+                <i class="material-icons">home</i>Головна
               </a>
             </li>
             <li class="nav-item mobile-menu-catalog__item">
-              <a href="#portfolio" class="mobile-menu-catalog__limk nav-link">
-                <i class="material-icons">hail</i>Останні Проєкти
+              <a href="#portfolio" class="mobile-menu-catalog__link nav-link">
+                <i class="material-icons">star</i>Останні Проєкти
               </a>
             </li>
             <li class="nav-item mobile-menu-catalog__item">
-              <a href="#projects" class="mobile-menu-catalog__limk nav-link">
-                <i class="material-icons">hail</i>Мої Проєкти
+              <a href="#projects" class="mobile-menu-catalog__link nav-link">
+                <i class="material-icons">attachment</i>Мої Проєкти
               </a>
             </li>
             <li class="nav-item mobile-menu-catalog__item">
-              <a href="#developer" class="mobile-menu-catalog__limk nav-link">
+              <a href="#developer" class="mobile-menu-catalog__link nav-link">
                 <i class="material-icons">hail</i>Про мене
               </a>
             </li>
             <li class="nav-item mobile-menu-catalog__item">
-              <a href="#feedback" class="mobile-menu-catalog__limk nav-link">
-                <i class="material-icons">hail</i>Зв'язатися зі мною
+              <a href="#feedback" class="mobile-menu-catalog__link nav-link">
+                <i class="material-icons">phone</i>Зв'язатися зі мною
               </a>
             </li>
-            <li class="mobile-menu-catalog__item"><div class="divider"></div></li>
             <li class="mobile-menu-catalog__item">
-              <a class="mobile-menu-catalog__limk nav-link" href="#"
+              <div class="divider"></div>
+            </li>
+            <li class="mobile-menu-catalog__item">
+              <a class="mobile-menu-catalog__link nav-link" href="#"
                 ><i class="material-icons">cancel</i>Cancel</a
               >
             </li>
@@ -435,8 +435,11 @@
           <!-- ./карточки -->
 
           <!-- If we need navigation buttons -->
-          <div class="swiper-button-prev portfolio__swiper-btn_prev"></div>
-          <div class="swiper-button-next portfolio__swiper-btn_next"></div>
+          <div class="portfolio__swiper-arrows">
+            <div class="swiper-button-prev portfolio__swiper-btn_prev"></div>
+            <div class="swiper-button-next portfolio__swiper-btn_next"></div>
+          </div>
+          <!-- /.portfolio__swiper-arrows -->
         </div>
 
         <h2 class="section-heading" id="projects">Мої проєкти</h2>
@@ -456,7 +459,9 @@
               </span>
               <!-- /.project-link__dots -->
               <span class="project-bracket">[</span>
-              HTML5, CSS3, Marsy, Fontello, JQuery
+              <span class="project-text"
+                >HTML5, CSS3, Marsy, Fontello, JQuery</span
+              >
               <span class="project-bracket">]</span>
             </span>
           </li>
@@ -472,7 +477,7 @@
                 ........................................
               </span>
               <span class="project-bracket">[</span>
-              HTML5, CSS3, Figma, UI/UX
+              <span class="project-text">HTML5, CSS3, Figma, UI/UX</span>
               <span class="project-bracket">]</span>
             </span>
           </li>
@@ -487,7 +492,7 @@
                 ........................................
               </span>
               <span class="project-bracket">[</span>
-              HTML5, CSS3, Figma
+              <span class="project-text">HTML5, CSS3, Figma</span>
               <span class="project-bracket">]</span>
             </span>
           </li>
@@ -503,7 +508,7 @@
                 ........................................
               </span>
               <span class="project-bracket">[</span>
-              HTML5, CSS3, Adobe XD
+              <span class="project-text">HTML5, CSS3, Adobe XD</span>
               <span class="project-bracket">]</span>
             </span>
           </li>
@@ -519,7 +524,7 @@
                 ........................................
               </span>
               <span class="project-bracket">[</span>
-              HTML5, CSS3, Figma
+              <span class="project-text">HTML5, CSS3, Figma</span>
               <span class="project-bracket">]</span>
             </span>
           </li>
@@ -535,7 +540,7 @@
                 ........................................
               </span>
               <span class="project-bracket">[</span>
-              HTML5, CSS3, Figma
+              <span class="project-text">HTML5, CSS3, Figma</span>
               <span class="project-bracket">]</span>
             </span>
           </li>
@@ -551,7 +556,7 @@
                 ........................................
               </span>
               <span class="project-bracket">[</span>
-              HTML5, CSS3, JavaScript
+              <span class="project-text">HTML5, CSS3, JavaScript</span>
               <span class="project-bracket">]</span>
             </span>
           </li>
@@ -567,7 +572,7 @@
                 ........................................
               </span>
               <span class="project-bracket">[</span>
-              HTML5, CSS3, Figma, JavaScript
+              <span class="project-text">HTML5, CSS3, Figma, JavaScript</span>
               <span class="project-bracket">]</span>
             </span>
           </li>
@@ -583,7 +588,7 @@
                 ........................................
               </span>
               <span class="project-bracket">[</span>
-              HTML5, CSS3, Figma, JavaScript
+              <span class="project-text">HTML5, CSS3, Figma, JavaScript</span>
               <span class="project-bracket">]</span>
             </span>
           </li>
@@ -599,7 +604,7 @@
                 ........................................
               </span>
               <span class="project-bracket">[</span>
-              HTML5, CSS3, JavaScript
+              <span class="project-text">HTML5, CSS3, JavaScript</span>
               <span class="project-bracket">]</span>
             </span>
           </li>
@@ -615,7 +620,7 @@
                 ........................................
               </span>
               <span class="project-bracket">[</span>
-              HTML5, CSS3, Figma
+              <span class="project-text">HTML5, CSS3, Figma</span>
               <span class="project-bracket">]</span>
             </span>
           </li>
@@ -631,7 +636,7 @@
                 ........................................
               </span>
               <span class="project-bracket">[</span>
-              HTML5, CSS3, Figma
+              <span class="project-text">HTML5, CSS3, Figma</span>
               <span class="project-bracket">]</span>
             </span>
           </li>
@@ -647,7 +652,7 @@
                 ........................................
               </span>
               <span class="project-bracket">[</span>
-              HTML5, CSS3, Figma
+              <span class="project-text">HTML5, CSS3, Figma</span>
               <span class="project-bracket">]</span>
             </span>
           </li>
@@ -663,7 +668,7 @@
                 ........................................
               </span>
               <span class="project-bracket">[</span>
-              HTML5, CSS3
+              <span class="project-text">HTML5, CSS3</span>
               <span class="project-bracket">]</span>
             </span>
           </li>
@@ -679,7 +684,7 @@
                 ........................................
               </span>
               <span class="project-bracket">[</span>
-              HTML5, CSS3, Figma
+              <span class="project-text">HTML5, CSS3, Figma</span>
               <span class="project-bracket">]</span>
             </span>
           </li>
@@ -695,7 +700,7 @@
                 ........................................
               </span>
               <span class="project-bracket">[</span>
-              HTML5, CSS3, JavaScript
+              <span class="project-text">HTML5, CSS3, JavaScript</span>
               <span class="project-bracket">]</span>
             </span>
           </li>
@@ -707,7 +712,13 @@
 
     <!-- Developer -->
     <section class="developer container" id="developer">
-      <img src="img/OK.jpeg" alt="Сергій Світличний" class="developer-photo" width="360" height="440" />
+      <img
+        src="img/OK.jpeg"
+        alt="Сергій Світличний"
+        class="developer-photo"
+        width="360"
+        height="440"
+      />
       <div class="developer-about">
         <span class="developer-hello">Всім привіт</span>
         <h2 class="developer-title">Я, Сергій Світличний</h2>
