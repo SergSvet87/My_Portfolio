@@ -38,6 +38,7 @@ body {
 .home {
   min-height: 700px;
   position: relative;
+  overflow: hidden;
 }
 
 .home__video {
