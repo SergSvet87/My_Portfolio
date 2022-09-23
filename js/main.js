@@ -70,7 +70,7 @@ const menu = () => {
 document.addEventListener("DOMContentLoaded", function () {
   let developerPhoto = document.querySelector('.developer-photo');
   document.addEventListener('mousemove', (event) => {
-    developerPhoto.style.transform = 'translate3d(' + ((event.clientX * 0.2) / 3) + 'px,' + ((event.clientY * 0.4) / 8) + 'px,0px)';
+    developerPhoto.style.transform = 'translate3d(' + ((event.clientX * 0.2) / 5) + 'px,' + ((event.clientY * 0.4) / 8) + 'px,0px)';
   });
 })
 
