@@ -38,7 +38,8 @@ const swiper = new Swiper('.swiper', {
   // direction: 'vertical',
   slidesPerView: 1,
   loop: true,
-  speed: 400,
+  // effect: 'fade',
+  speed: 1500,
   spaceBetween: 20,
 
   // Navigation arrows
@@ -67,10 +68,27 @@ const menu = () => {
   }
 }
 
+// Добавляю паралакс эффект к картинке в блоке разработка
 document.addEventListener("DOMContentLoaded", function () {
   let developerPhoto = document.querySelector('.developer-photo');
   document.addEventListener('mousemove', (event) => {
     developerPhoto.style.transform = 'translate3d(' + ((event.clientX * 0.2) / 5) + 'px,' + ((event.clientY * 0.4) / 8) + 'px,0px)';
+  });
+})
+
+// Кнопка для прокрутки к верху страницы (находится в самом низу, перед футером)
+const scrollToTop = document.querySelector('#scrollToTopButton')
+
+// Вешаем событие клик на кнопку
+scrollToTop.addEventListener('click', (event) => {
+  // Отменяем обычное поведение ссылок
+  event.preventDefault();
+
+  // С помощью события seamless-scroll-polyfill(библиотека подключена с https://www.npmjs.com/package/seamless-scroll-polyfill) создаем плавную прокрутку вверх страницы
+  seamless.scrollIntoView(document.querySelector(".header"), {
+    behavior: "smooth",
+    block: "center",
+    inline: "center",
   });
 })
 

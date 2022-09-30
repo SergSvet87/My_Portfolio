@@ -91,6 +91,10 @@ body {
   font-weight: 700;
 }
 
+.nav-link:hover{
+  border-bottom: 1px solid #ffbe5d;
+}
+
 .mobile-catalog {
   display: none;
 }
@@ -260,7 +264,7 @@ body {
   text-align: center;
 }
 .slide-swiper__card-title {
-  margin-top: 0;
+  margin-top: 20px;
   margin-bottom: 8px;
   font-weight: 700;
   font-size: 24px;
@@ -473,12 +477,26 @@ body {
   justify-content: space-around;
 }
 
+.footer__right{
+  max-width: 500px;
+}
+
+.footer__right .material-icons{
+  font-size: 16px;
+}
+
 .footer__right a{
   text-decoration: none;
   color: inherit;
 }
 .footer__right a:hover{
-  text-shadow: 2px 2px rgba(0, 0, 0, 0.4);
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.footer__right address{
+  display: inline-block;
+  font-style: inherit;
+  color: #bf7506;
 }
 /* ./footer */
 
@@ -515,6 +533,13 @@ body {
   .project-link {
     font-size: 18px;
     margin-left: 10px;
+  }
+  .portfolio__swiper .swiper-button-next {
+    right: 50px;
+  }
+  
+  .portfolio__swiper .swiper-button-prev {
+    left: 38px;
   }
   .developer-photo {
     width: 300px;
@@ -824,7 +849,14 @@ body {
   .social-list {
     width: 220px;
   }
+  .footer>.container{
+    justify-content: space-between;
+  }
   .footer__right{
+    max-width: 180px;
     margin-top: 15px;
+  }
+  .footer__right address{
+    display: block;
   }
 }
