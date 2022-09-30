@@ -49,6 +49,7 @@ const swiper = new Swiper('.swiper', {
   },
 });
 
+// Кнопка меню в мобильной версии
 const menu = () => {
   const menuBurger = document.querySelector('.mobile-menu-catalog');
   const body = document.querySelector('body');
@@ -76,16 +77,16 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 })
 
-// Кнопка для прокрутки к верху страницы (находится в самом низу, перед футером)
+// Кнопка для прокрутки к верху страницы (находится в самом низу в футере)
 const scrollToTop = document.querySelector('#scrollToTopButton')
 
-// Вешаем событие клик на кнопку
+// Вешаю событие клик на кнопку
 scrollToTop.addEventListener('click', (event) => {
-  // Отменяем обычное поведение ссылок
+  // Отменяю обычное поведение ссылок
   event.preventDefault();
 
-  // С помощью события seamless-scroll-polyfill(библиотека подключена с https://www.npmjs.com/package/seamless-scroll-polyfill) создаем плавную прокрутку вверх страницы
-  seamless.scrollIntoView(document.querySelector(".header"), {
+  // С помощью события seamless-scroll-polyfill(библиотека подключена с https://www.npmjs.com/package/seamless-scroll-polyfill) создаю плавную прокрутку вверх страницы
+  seamless.scrollIntoView(document.querySelector(".hero"), {
     behavior: "smooth",
     block: "center",
     inline: "center",
