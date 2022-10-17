@@ -108,8 +108,8 @@ body {
 }
 
 .header-photo {
-  width: 212px;
-  height: 237px;
+  width: 312px;
+  height: 357px;
   border-radius: 60px;
 }
 
@@ -149,6 +149,10 @@ body {
   font-size: 28px;
 }
 
+.social-item:hover {
+  box-shadow: 0px 5px 12px 7px rgba(0, 0, 0, 0.6);
+}
+
 .social-list {
   max-width: 300px;
   list-style: none;
@@ -175,7 +179,7 @@ body {
   align-items: center;
   text-decoration: none;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 22px;
   line-height: 150%;
   color: #fff;
   border-bottom: 2px solid #ffbe5d;
@@ -183,6 +187,11 @@ body {
 
 .cv-icon {
   margin-right: 4px;
+}
+
+.cv-download:hover {
+  box-shadow: 0px 0px 8px 17px rgba(0, 0, 0, 0.3) inset;
+  border-radius: 7px;
 }
 
 .section-heading {
