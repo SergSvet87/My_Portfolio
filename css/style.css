@@ -150,10 +150,13 @@ body {
 }
 
 .social-list {
+  max-width: 300px;
   list-style: none;
   padding: 0;
   display: flex;
+  justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .social-link {
@@ -502,6 +505,59 @@ body {
 
 .page-up a span i {
   font-size: 38px;
+}
+
+.footer__animation {
+  width: 100px;
+  height: 100px;
+}
+
+.animation__circle:hover .animation__text {
+  animation-play-state: paused;
+  fill: #fff;
+  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
+}
+
+.animation__circle:hover .animation__arrow {
+  transform: scale(0.5);
+}
+
+.animation__arrow {
+  transform-box: fill-box;
+  transform-origin: center center;
+}
+
+.animation__text {
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  word-spacing: 3px;
+  animation: motion normal infinite 20s linear;
+  transform-origin: 50% 50%;
+}
+
+@keyframes round {
+  0%,
+  100% {
+    clip: rect(0px, 40px, 4px, 0px);
+  }
+  25% {
+    clip: rect(0px, 4px, 40px, 0px);
+  }
+
+  50% {
+    clip: rect(40px, 40px, 40px, 0px);
+  }
+
+  75% {
+    clip: rect(0px, 40px, 40px, 40px);
+  }
+}
+
+@keyframes motion {
+  to {
+    transform: rotate(-360deg);
+  }
 }
 
 .footer__right {
